@@ -1,55 +1,183 @@
-body {
-    margin: 0 auto;
+body{
+    background-color: #F5F5DD;
+    margin: 0;
+}
+nav,section,aside{
+    background-color: #FFF;
+    padding: 10px 5px;
+    margin-top: 15px;
+}
+nav{
+    margin-right: 10px;    
+}
+aside{
+    margin-left: 10px;
+}
+header,footer{
+    min-width: 960px;
+    background-color: #FFF;
+}
+header{
+    border-bottom: solid 1px #CCCCCC;
+}
+header div,footer div{
     width: 960px;
+    margin: 0 auto;
+}
+.imgMain,aside img,.parts img{
+    vertical-align: bottom;
+}
+
+#divMiddle{
+    width: 960px;
+    margin: 0 auto;
+}
+h2{
+    padding-top: 3px;
+    margin: 0 0 10px 0;
+    border-radius: 20px;
+    background-color: #99BB22;
+    font-size: 21px;
+    padding-left: 40px;
+}
+h3{
+    color: #800000;
+    font-size: 16px;
+    margin: 0 0 10px 0;
+}
+.dish{
+    float: left;
+    padding: 6px 0 0 15px;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.imgCookCamp{
+    float: left;
+    
+}
+.h1Top{
+    float: left;
+    clear: both;
+    margin: 5px 5px 5px 0;
+    font-size: 16px;
+    font-weight: normal;
+}
+form{
+    float: right;
+    margin-top: 10px;
+}
+.ulTop{
+    margin: 10px 0;
+    clear: both;
+    display: table;
+    table-layout: fixed;
+    width: 960px;
+}
+.ulTop li{
+    border-left: solid 1px #CCCCCC;
+    display: table-cell;
     text-align: center;
 }
-header {
-    width: 100%;
-    padding: 10px 0px;
-    border: solid 1px black;
-    background-color: white;
-}
-#all {
-    padding-left: 150px;
-    padding-right: 150px;
-    height: 1000px;
-    background-color: beige;
-    border: 1px solid red;
-}
-img {
-    width: 660px ;
-}
-.nav1 {
-    width: 160px;
-    height: 300px;
-    border: solid 1px black;
-}
-.nav2 {
-    width: 160px;
-    height: 300px;
-    border: solid 1px black;
-}
-.sec1 {
-    width: 350px;
-    height: 140px;
-    border: solid 1px black;
-}
-.sec2 {
-    width: 350px;
-    height: 300px;
-    border: solid 1px black;
-}
-.sec3 {
-    width: 350px;
-    height: 300px;
-    border: solid 1px black;
-}
 
-
-
-footer {
-    width: 100%;
-    padding: 10px 0px;
-    border: solid 1px black;
-    background-color: white;
+.ulTop li:first-child{
+    border-left: none;
+}
+a{
+    display: block;
+    color: #000;
+    text-decoration: none;
+}
+.imgMain{
+    width: 960px;
+}
+#parent{
+    display: flex;
+}
+#child1{
+    flex: 2;
+}
+#child2{
+    flex: 6;
+}
+#child3{
+    flex: 1;
+}
+.ulNav li{
+    border-bottom: dashed 1px #CCCCCC;
+    padding: 5px;
+}
+.ulNav li img{
+    padding-right: 10px;
+}
+.ulNav li:last-child{
+    border-bottom: none;
+}
+.product{
+    display: flex;
+}
+.parts{
+    flex: 1;
+    text-align: center;
+}
+.parts figcaption{
+    font-size: 11px;
+}
+section div a{
+    color: #FC8833;
+}
+#sectionSecond{
+    height: 412px;
+}
+#sectionSecond .img,#sectionThird .img{
+    width: 230px;
+    float: left;
+    margin-left: 10px;
+}
+#sectionSecond div,#sectionThird div{
+    width: 300px;
+    float: right;
+    margin: 0 15px;
+}
+#sectionSecond div p,#sectionThird div p{
+    font-size: 15px;
+}
+#sectionSecond div p:first-child{
+    margin-top: 0;
+}
+#sectionSecond div p:first-child,#sectionThird div p:first-of-type{
+    text-indent: 1em;
+}
+#sectionSecond div a,#sectionThird div a{
+    float: right;
+}
+#sectionThird{
+    height: 434px;
+    clear: both;
+}
+#sectionThird #imgSecond{
+    clear: both;
+}
+footer div ul{
+    display:flex;
+    width: 650px;
+    margin: 10px auto;
+    text-align: center;
+}
+footer div ul li{
+    border-left: solid 1px #CCCCCC;
+    flex: 1;
+    font-size: 14px;
+}
+footer div ul li:first-child{
+    border-left: none;
+}
+footer div p{
+    margin-bottom: 0;
+    text-align: center;
+}
+footer{
+    border-top: solid 1px #CCCCCC;
 }

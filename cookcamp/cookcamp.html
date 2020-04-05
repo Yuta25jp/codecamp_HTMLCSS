@@ -1,62 +1,133 @@
+
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cookcamp</title>
-    <link rel="stylesheet" href="cookcamp.css">
-</head>
-<body>
-    <header>
-        <p>header</p>
-    </header>
-    <div id="all">
-        <img src="/Users/yuta.imai/Google/codecamp/codecamp_HTMLCSS/cookcamp/images/contents/mainView.jpg" alt="家庭で簡単フレンチ特集">
-        <nav class="nav1">
-            <p>料理別レシピ</p>
-            <!-- <ul>
-                <li>和食</li>
-                <li>イタリアン</li>
-                <li>フレンチ</li>
-                <li>中華</li>
-                <li>アジアン</li>
-                <li>エスニック</li>
-                <li>鍋</li>
-                <li>デザート</li>
-            </ul> -->
-        </nav>
-        <nav class="nav2">
-            <p>目的別レシピ</p>
-            <!-- <ul>
-                <li>お弁当</li>
-                <li>簡単おかず</li>
-                <li>ダイエット</li>
-                <li>ベビーフード</li>
-                <li>節約食材</li>
-                <li>アレルギー</li>
-                <li>シニア料理</li>
-            </ul> -->
-        </nav>
-        <article>
-            <section class="sec1">
-                <p>新着レシピ</p>
-            </section>
-            <section class="sec2">
-                <p>今だからこそ見直したい「和食」</p>
-            </section>
-            <section class="sec3">
-                <p>簡単!おすすめのレシピ</p>
-            </section>　
-        </article>
-        <aside class="aside1">
-           <!-- <img src="/Users/yuta.imai/Google/codecamp/codecamp_HTMLCSS/cookcamp/images/contents/right1.png" alt="ad1">-->
-        </aside>
-        <aside class="aside2">
-           <!-- <img src="/Users/yuta.imai/Google/codecamp/codecamp_HTMLCSS/cookcamp/images/contents/right2.png" alt="ad2">-->
-        </aside>
-    </div>
-    <footer>
-        <p>footer</p>
-    </footer>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>CookCamp</title>
+        <link rel="stylesheet" href="cookcamp.css">
+    </head>
+    <body>
+        <header>
+            <div>
+                <img class="imgCookCamp" src="images/structure/logo.png" alt="cookcampのロゴ">
+                <form action="#">
+                    <input type="text" name="recipe" placeholder="料理名･食材名で検索">
+                    <input type="submit" value="レシピ検索">
+                </form>
+                <h1 class="h1Top">誰でも作れる簡単料理レシピ掲載サイト</h1>
+                <ul class="ulTop">
+                    <li><a href="#">新着レシピ</a></li>
+                    <li><a href="#">料理から検索</a></li>
+                    <li><a href="#">食材から検索</a></li>
+                    <li><a href="#">旬の料理特集</a></li>
+                    <li><a href="#">ランキング</a></li>
+                </ul>
+            </div>
+        </header>
+        <div id="divMiddle">
+            <img class="imgMain" src="images/contents/mainView.jpg" alt="家庭で簡単フレンチ特集">
+            <div id="parent">
+                <div id="child1">
+                    <nav>
+                        <img class="dish" src="images/icon/dish.png"><h2>料理別レシピ</h2>
+                        <ul class="ulNav">
+                            <li><a href="#"><img src="images/icon/arrow.png">和食</a></li>
+                            <li><a href="#"><img src="images/icon/arrow.png">イタリアン</a></li>
+                            <li><a href="#"><img src="images/icon/arrow.png">フレンチ</a></li>
+                            <li><a href="#"><img src="images/icon/arrow.png">中華</a></li>
+                            <li><a href="#"><img src="images/icon/arrow.png">アジアン</a></li>
+                            <li><a href="#"><img src="images/icon/arrow.png">エスニック</a></li>
+                            <li><a href="#"><img src="images/icon/arrow.png">麺</a></li>
+                            <li><a href="#"><img src="images/icon/arrow.png">デザート</a></li>
+                        </ul>
+                    </nav>
+                    <nav>
+                        <img class="dish" src="images/icon/dish.png"><h2>目的別レシピ</h2>
+                        <ul class="ulNav">
+                            <li><a href="#"><img src="images/icon/arrow.png">お弁当</a></li>
+                            <li><a href="#"><img src="images/icon/arrow.png">簡単おかず</a></li>
+                            <li><a href="#"><img src="images/icon/arrow.png">ダイエット</a></li>
+                            <li><a href="#"><img src="images/icon/arrow.png">ベビーフード</a></li>
+                            <li><a href="#"><img src="images/icon/arrow.png">節約食材</a></li>
+                            <li><a href="#"><img src="images/icon/arrow.png">アレルギー</a></li>
+                            <li><a href="#"><img src="images/icon/arrow.png">シニア料理</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <article id="child2">
+                    <section id="sectionFirst">
+                        <img class="dish" src="images/icon/dish.png"><h2>新着レシピ</h2>
+                        <div class="product">
+                            <figuer class="parts">
+                                <img src="images/contents/newRecipes1.jpg" alt="季節菜の彩前菜">
+                                <figcaption>季節菜の彩前菜</figcaption>
+                            </figuer>
+                            <figuer class="parts">
+                                <img src="images/contents/newRecipes2.jpg" alt="簡単かぼちゃスープ">
+                                <figcaption>簡単かぼちゃスープ</figcaption>
+                            </figuer>
+                            <figuer class="parts">
+                                <img src="images/contents/newRecipes3.jpg" alt="ヘルシー米粉パン">
+                                <figcaption>ヘルシー米粉パン</figcaption>
+                            </figuer>
+                            <figuer class="parts">
+                                <img src="images/contents/newRecipes4.jpg" alt="ぷりぷり海老料理">
+                                <figcaption>ぷりぷり海老料理</figcaption>
+                            </figuer>
+                            <figuer class="parts">
+                                <img src="images/contents/newRecipes5.jpg" alt="かんたん鴨南蛮">
+                                <figcaption>かんたん鴨南蛮</figcaption>
+                            </figuer>
+                        </div>
+                    </section>
+                    <section id="sectionSecond">
+                        <img class="dish" src="images/icon/dish.png"><h2>今だからこそ見直したい「和食」</h2>
+                        <img class="img" src="images/contents/topics.jpg" alt="和食">
+                        <div>
+                            <p>普段、私たちが何気なく口にしている和食ですが、そのきほんはその基本は一汁三菜。ごはん、みそ汁、お漬物の他、主菜(魚またはお肉)、副菜として季節毎の野菜と豆類で構成されます。</p>
+                            <p>昔から「旬の野菜を食べましょう」と言いますが、それは素材がじっくりと時間をかけて蓄積してきた旨みや栄養価が最高になったところでいただいて、効率よく栄養を取り風邪などの予防をしましょうね、ということです。</p>
+                            <p>それでは各季節毎の旬の野菜について調べてみましょう。</p>
+                            <a href="#"><img src="images/icon/arrow.png">続きを読む</a>
+                        </div>
+                    </section>
+                    <section id="sectionThird">
+                        <img class="dish" src="images/icon/dish.png"><h2>簡単!おすすめレシピ</h2>
+                        <img class="img" src="images/contents/pushRecipes1.jpg">
+                        <div>
+                            <h3>季節の食材&sim;春&sim;</h3>
+                            <p>新たまねぎに春キャベツ、新じゃが、山菜などなど・・・春の野菜は風味が良くみずみずしいのが特徴です。</p>
+                            <p>それでは春野菜を使ったレシピを紹介しましょう。</p>
+                            <a href="#"><img src="images/icon/arrow.png">続きを読む</a>
+                        </div>
+                               <img class="img" id="imgSecond" src="images/contents/pushRecipes2.jpg">
+                        <div>
+                            <h3>春野菜を食べて花粉症予防？！</h3>
+                            <p>春になると花粉症に悩まされる人は多いと思います。この花粉症、ある食材を取ることで少し緩和されるんです!</p>
+                            <p>さて、その食材とは・・・？</p>
+                            <a href="#"><img src="images/icon/arrow.png">続きを読む</a>
+                        </div>
+                    </section>
+                </article>
+                <div id="child3">
+                    <aside>
+                        <a href="#"><img src="images/contents/right1.png"></a>
+                    </aside>
+                    <aside>
+                        <a href="#"><img src="images/contents/right2.png"></a>
+                    </aside>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div>
+                <ul>
+                    <li><a href="#">サイトマップ</a></li>
+                    <li><a href="#">プライバシーポリシー</a></li>
+                    <li><a href="#">お問い合わせ</a></li>
+                    <li><a href="#">ご利用ガイド</a></li>
+                </ul>
+                <p><small>Copyright &copy; TribeUniv All Rights Reserved.</small></p>
+            </div>
+        </footer>
+    </body>
 </html>
