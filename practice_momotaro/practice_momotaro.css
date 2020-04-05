@@ -1,0 +1,26 @@
+h2 {
+    color: blue;
+    font-size: 20px;
+    text-align: center;
+    border-top: dotted 1px blue;
+    border-bottom: dotted 1px blue;
+    background-color: rgb(167, 197, 224);
+
+}
+
+span {
+    font-size: 16px;
+    color: red;
+}
+
+p {
+    font-size: 16px;
+}
+
+a {
+    color: orange;
+}
+
+li {
+    list-style-type: square;
+}

@@ -1,0 +1,72 @@
+body{
+    margin: 0px;
+    line-height: 160%;
+}
+h1{
+    font-size: 30px;
+    text-align: center;
+}
+.subtitle{
+    font-size: 25px;
+    text-align: left;
+}
+article {
+    margin: 0 auto;
+    padding: 50px;
+    width: 500px;
+    background-color: gray;
+    font-size: 16px;
+}
+ul{
+    list-style-type: square;
+    font-weight: bold;
+}
+li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+section{
+    background-color: white;
+    padding: 20px;
+}
+dt{
+    font-weight: bold;
+    border-left: solid 10px blue;
+    border-bottom: dashed 1px blue;
+}
+
+.restB{
+    color: red;
+    background-color: pink;
+}
+.restC{
+    background-color: pink;
+}
+.restE{
+    color: red;
+}
+
+.p_second {
+    background-color: #F0F0F0;
+}
+.pinkback{
+    background-color: pink;
+}
+.redtext{
+    color: red;
+}
+
+.p_third {
+    background-color: #F0F0F0;
+}
+.restaurant{
+    border: solid 3px red;
+    margin-bottom: 30px;
+}
+
+.food {
+    border: solid 3px blue;
+}
+.OrangeAst{
+    color: orange;
+}
